@@ -9,8 +9,8 @@
 
 makeCacheMatrix <- function(origMatrix = matrix()) {
         invMatrix <- NULL
-        set <- function(y) {
-                origMatrix <<- y
+        set <- function(newMatrix) {
+                origMatrix <<- newMatrix
                 invMatrix <<- NULL
         }
         get <- function() origMatrix
